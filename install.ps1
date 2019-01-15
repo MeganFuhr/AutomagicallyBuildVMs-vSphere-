@@ -24,7 +24,7 @@ begin
 Process
 {
     #Create the VMs from a template
-    Create-fVMS -Template 2012R2_Template -Cluster NTNX-CL01 -Datastore Forthright_DS1 -VC $vc -VMName $VMName
+    Create-fVMS -Template $template -Cluster $Cluster -Datastore $DS -VC $vc -VMName $VMName
     
     #Power on the VMs
     Start-VM $VMName
